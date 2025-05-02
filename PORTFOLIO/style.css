@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body, html {
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden; 
+}
+
+.container-nav {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 4.5rem;
+  padding: 0rem 3.5rem;
+}
+
+.logo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #fbbf24;
+  font-size: 1.8rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 0.8rem;
+}
+
+nav li a {
+  font-size: 1.1rem;
+  color: #1f2937;
+  text-decoration: none;
+  padding: 10px 0;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  height: 2px;
+  width: 0;
+  background-color: #fbbf24;
+  transition: width 0.3s ease;
+}
+nav li a:hover::after {
+  width: 100%;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  color: #1f2937;
+  cursor: pointer;
+}
+
+ /* HERO SECTION */
+ .container-hero {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: left;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-weight: bold;
+}
+
+#typed {
+  color: #fbbf24;
+  font-weight: bold;
+}
+
+#intro {
+  color: #1f2937;
+}
+
+.hero-img img {
+  width: 350px;
+  border-radius: 50%;
+}
+
+.acc-links {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+}
+
+.acc-links a {
+  margin-right: 1rem;
+  color: #111827;
+}
+
+.button {
+  margin-top: 1rem;
+  margin-left: -1.7rem;
+}
+
+.custom-outline {
+  color: #1f2937;
+  border: 1px solid #1f2937;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-hire{
+  padding:0.5rem ;
+  margin-left: -1rem;
+}
+.custom-outline:hover {
+  background-color: #1f2937;
+  color: white;
+}
+.btn-warning {
+  background-color: #fbbf24;
+  color: #111827;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+.hero-text button a{
+  text-decoration: none;
+  color: #111827;
+}
+
+/* ABOUT SECTION */
+.about-heading {
+  margin: 5rem 2rem 1.5rem;
+}
+
+.about-heading h2 {
+  font-weight: bold;
+}
+
+.container-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 2rem;
+  gap: 2rem;
+  padding-bottom: 1rem;
+}
+
+.about-img img {
+  width: 350px;
+  border-radius: 50%;
+}
+
+.vertical-line {
+  width: 2px;
+  background-color: #111827;
+  height: 14rem;
+}
+
+.about-text {
+  max-width: 600px;
+  line-height: 2rem;
+  text-align: justify;
+}
+
+/* MY SERVICES */
+.container-service {
+  margin-top: 5rem;
+  padding: 1rem 1rem;
+}
+.service-heading {
+  font-weight: 600;
+}
+.icon-gold {
+  color: #fbbf24;
+}
+.icon-gold:hover {
+  color: #f59e0b; /* A slightly darker gold */
+  transition: color 0.3s ease;
+}
+/* PROJECTS */
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 1.5rem rgba(251, 191, 36, 0.1);
+}
+/* FOOTER */
+.foot-p {
+  color: #fff;
+}
+.simple {
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+/* media queries */
+
+@media (max-width: 768px){
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* hero section */
+  .container-hero {
+    flex-direction: column-reverse; 
+    text-align: center;
+  }
+
+  .hero-img img {
+    width: 250px;
+  }
+/* about */
+.container-about {
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-img img {
+  width: 220px;
+}
+
+.vertical-line {
+  height: 2px;
+  width: 80%;
+  margin: 1rem 0;
+}
+
+.about-text {
+  text-align: center;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+/* footer */
+.row > .col-12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+}
+
+@media (max-width: 885px) and (min-width: 769px) {
+  .container-hero {
+    flex-direction: column-reverse; 
+    text-align: center;
+  }
+}
+
+@media (max-width: 530px) {
+  .container-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    padding: 0.5rem 1rem;
+    align-items: center;
+  }
+
+  .logo {
+    margin-top: 0.6rem;
+    font-size: 1.3rem;
+  }
+
+  .hamburger {
+    font-size: 1.3rem;
+    margin-top: 0;
+    align-self: center;
+  }
+
+  nav ul {
+    top: 50px; 
+  }
+
+  nav li a {
+    font-size: 1rem;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  /* hero section */
+  .container-hero {
+    flex-direction: column-reverse; /* 👈 this brings image before text */
+    text-align: center;
+  }
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-text p,
+  .about-text {
+    font-size: 0.95rem;
+  }
+
+  .acc-links {
+    font-size: 1.3rem;
+  }
+
+  .btn,
+  .custom-outline,
+  .btn-warning {
+    font-size: 0.9rem;
+  }
+
+  .button-top {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+  /* about */
+  .about-img img {
+    width: 200px;
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+    line-height: 1.6rem;
+  }
+
+  .vertical-line {
+    width: 80%;
+  }
+}

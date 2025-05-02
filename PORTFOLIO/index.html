@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="Images/logo.png" sizes="32x32" type="image/png" />
+    <title>Muhammad Waqar Ajmal | Portfolio - Frontend Developer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container-nav">
+          <h1 class="logo">Waqar</h1>
+
+          <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </div>
+
+          <ul id="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="container-hero">
+          <div class="hero-text">
+            <h3>Hello, It's Me</h3>
+            <h1>Muhammad Waqar Ajmal</h1>
+            <h3>And I specialize in <span id="typed"></span></h3>
+            <br />
+            <p id="intro">
+              I'm a passionate front-end developer dedicated to building clean,
+              responsive, and user-friendly websites. I love turning ideas into
+              real, interactive web experiences.
+            </p>
+            <div class="acc-links">
+              <a href="https://github.com/Muhammad-Waqar022" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="mailto:ranawaqar4343@gmail.com"
+                ><i class="fa-regular fa-envelope"></i
+              ></a>
+            </div>
+            <div class="button">
+              <button type="button" class="btn">
+                <a class="custom-outline" href="#projects">View my Projects</a>
+              </button>
+              <button type="button" class="btn btn-outline-warning btn-hire">
+                <a href="#contact">Hire Me</a>
+              </button>
+            </div>
+          </div>
+          <div class="hero-img">
+            <img src="Images/Profile picture.png" alt="picture" />
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="about-heading">
+          <h2 class="text-center">About Me</h2>
+        </div>
+        <div class="container-about">
+          <div class="about-img">
+            <img src="Images/Profile picture.png" alt="Waqar's photo" />
+          </div>
+          <div class="about-text">
+            <p>
+              I'm <b>Waqar</b>, a 19-year-old self-taught
+              <b>frontend developer</b> who builds sleek, high-performing
+              websites using <b>JavaScript</b> and <b>Bootstrap</b>. I create
+              responsive, user-focused designs that look sharp and work
+              flawlessly across all devices. <br /><br />
+              I'm passionate about delivering <b>smooth user experiences</b> and
+              visually striking interfaces. Every project I work on reflects my
+              commitment to quality, performance, and modern design standards.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="container container-service">
+          <h2 class="service-heading text-left mb-5">My Services</h2>
+          <div class="row">
+            <!-- Card 1: Responsive Website Development -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 shadow-sm text-center">
+                <div class="card-body">
+                  <i class="fas fa-laptop-code fa-3x icon-gold"></i>
+                  <h5 class="card-title">Responsive Website Development</h5>
+                  <p class="card-text">
+                    I build fast, mobile-friendly websites that look great on
+                    all devices using clean and modern code.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Custom UI Design with Bootstrap -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 shadow-sm text-center">
+                <div class="card-body">
+                  <i class="fas fa-pencil-ruler fa-3x icon-gold"></i>
+                  <h5 class="card-title">Custom UI Design with Bootstrap</h5>
+                  <p class="card-text">
+                    I design sleek, responsive layouts using Bootstrap for
+                    consistent and modern web experiences.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Website Optimization -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 shadow-sm text-center">
+                <div class="card-body">
+                  <i class="fas fa-tachometer-alt fa-3x icon-gold"></i>
+                  <h5 class="card-title">Website Optimization</h5>
+                  <p class="card-text">
+                    I boost performance, reduce load times, and ensure a
+                    smoother experience across all devices.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Interactive Features with JavaScript -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 shadow-sm text-center">
+                <div class="card-body">
+                  <i class="fas fa-code fa-3x icon-gold"></i>
+                  <h5 class="card-title">
+                    Interactive Features with JavaScript
+                  </h5>
+                  <p class="card-text">
+                    I add dynamic functionality with JavaScript to make websites
+                    more engaging and user-friendly.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5: Landing Page Development -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 shadow-sm text-center">
+                <div class="card-body">
+                  <i class="fas fa-bullhorn fa-3x icon-gold"></i>
+                  <h5 class="card-title">Landing Page Development</h5>
+                  <p class="card-text">
+                    I design high-converting landing pages that are fast,
+                    focused, and built to drive action.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6: Responsive Fixes -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 shadow-sm text-center">
+                <div class="card-body">
+                  <i class="fas fa-mobile-alt fa-3x icon-gold"></i>
+                  <h5 class="card-title">Responsive Fixes</h5>
+                  <p class="card-text">
+                    I fix layout issues and make sure your site looks perfect
+                    across all screen sizes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="py-5">
+        <div class="container">
+          <h2 class="text-center fw-bold mb-5">My Projects</h2>
+          <div class="row">
+            <!-- Project Card 1 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 shadow-sm project-card">
+                <img
+                  src="Images/techpro website.png"
+                  class="card-img-top"
+                  alt="Project 1"
+                />
+                <div class="card-body text-center">
+                  <i class="fas fa-globe fa-2x mb-3" style="color: #fbbf24"></i>
+                  <h5 class="card-title">TechPro Smartwatch Website</h5>
+                  <p class="card-text">
+                    A stylish and responsive landing page for the TechPro
+                    Smartwatch, built using HTML, CSS, and Bootstrap.
+                  </p>
+                  <a
+                    href="https://techpro-smartwatch-waqar.netlify.app"
+                    class="btn btn-outline-dark btn-sm"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 shadow-sm project-card">
+                <img
+                  src="Images/login-signup page.png"
+                  class="card-img-top"
+                  alt="Project 2"
+                />
+                <div class="card-body text-center">
+                  <i class="fas fa-bolt fa-2x mb-3" style="color: #fbbf24"></i>
+                  <h5 class="card-title">Animated Login & Signup Page</h5>
+                  <p class="card-text">
+                    A clean and responsive login/signup form with smooth toggle
+                    animation, built using HTML and CSS
+                  </p>
+                  <a
+                    href="https://login-signup-page-waqar.netlify.app"
+                    class="btn btn-outline-dark btn-sm"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 shadow-sm project-card">
+                <img
+                  src="Images/landing-page.png"
+                  class="card-img-top"
+                  alt="Project 3"
+                />
+                <div class="card-body text-center">
+                  <i class="fas fa-tools fa-2x mb-3" style="color: #fbbf24"></i>
+                  <h5 class="card-title">Busy Bar Landing Page</h5>
+                  <p class="card-text">
+                    A sleek, modern landing page for a bar, designed with HTML,
+                    CSS, and JAVASCRIPT
+                  </p>
+                  <a
+                    href="https://busybar-landingpage-waqar.netlify.app"
+                    class="btn btn-outline-dark btn-sm"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="certificates">
+        <div class="container">
+          <h2 class="text-center fw-bold mb-5">My Certificates</h2>
+          <div class="row">
+            <!-- Certificate Card 1 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 shadow-sm border-0 project-card">
+                <a href="Images/certificate freecodecamp.png" target="_blank">
+                  <img
+                    src="Images/certificate freecodecamp.png"
+                    class="card-img-top img-fluid"
+                    alt="Certificate 1"
+                  />
+                </a>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Responsive Web Design</h5>
+                  <p class="card-text">
+                    Certified by FreeCodeCamp – HTML5, CSS3, Flexbox & more.
+                  </p>
+                  <a
+                    href="Images/certificate freecodecamp.png"
+                    target="_blank"
+                    class="btn btn-outline-dark btn-sm"
+                    >View Certificate</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- WORDPRESS CERTIFICATE -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 shadow-sm border-0 project-card">
+                <a
+                  href="Images/certificate intro to wordpress simpliLearn.png"
+                  target="_blank"
+                >
+                  <img
+                    src="Images/certificate intro to wordpress simpliLearn.png"
+                    class="card-img-top img-fluid"
+                    alt="Certificate 2"
+                  />
+                </a>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Introduction to WORDPRESS</h5>
+                  <p class="card-text">
+                    Certified by simpliLearn – Creating and managing websites
+                    using WordPress
+                  </p>
+                  <a
+                    href="Images/certificate intro to wordpress simpliLearn.png"
+                    target="_blank"
+                    class="btn btn-outline-dark btn-sm"
+                    >View Certificate</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-5">
+        <div class="container">
+          <h2 class="text-left fw-bold mb-5">Contact Me</h2>
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <form
+                action="https://formspree.io/f/xnndpdoj"
+                method="POST"
+                id="contact-form"
+              >
+                <!-- Name Field -->
+                <div class="mb-3">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    required
+                  />
+                </div>
+
+                <!-- Email Field -->
+                <div class="mb-3">
+                  <label for="email" class="form-label">Your Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                </div>
+
+                <!-- Subject Field -->
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subject"
+                    name="subject"
+                    required
+                  />
+                </div>
+
+                <!-- Message Field -->
+                <div class="mb-3">
+                  <label for="message" class="form-label">Your Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="d-grid gap-2">
+                  <button type="submit" class="btn btn-primary">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row d-flex flex-row">
+          <!-- Follow Me Column -->
+          <div class="col-12 col-md-6 mb-4">
+            <h5 class="text-start">Follow Me</h5>
+            <ul class="list-unstyled text-start">
+              <li>
+                <a
+                  href="https://github.com/Muhammad-Waqar022"
+                  class="text-white simple"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info Column -->
+          <div class="col-12 col-md-6 mb-4">
+            <h5 class="text-start">Contact Info</h5>
+            <ul class="list-unstyled text-start">
+              <li>
+                <strong>Email:</strong>
+                <a
+                  href="mailto:ranawaqar4343@gmail.com"
+                  class="text-white simple"
+                >
+                  ranawaqar4343@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="border-light" />
+
+        <div class="text-center">
+          <p class="text-white mb-0">
+            &copy; 2025 <b>Muhammad Waqar Ajmal</b>. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+      integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
