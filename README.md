@@ -1,21 +1,19 @@
-Login-Signup Page
-A modern and responsive login/signup page built using HTML, CSS, and JavaScript.
-Designed with a clean light theme and a smooth toggle between login and signup forms.
+🌐 Web Development Projects by Waqar
 
-✨ Features
-Responsive design for all devices (Desktop, Tablet, Mobile)
+Welcome to my web development repository! This repo contains a collection of my front-end projects built using HTML, CSS, Bootstrap, JavaScript, and other modern tools. Each project is designed with responsiveness, performance, and clean UI/UX in mind.
 
-Smooth form toggle animation (Login ⇄ Signup)
+## 🛠️ Tech Stack
 
-Light and minimal UI theme
+- HTML5  
+- CSS3  
+- Bootstrap  
+- JavaScript
+- Tailwind
+- Responsive Design
 
-Clean, well-organized code structure
+## 🚀 Features
 
-Basic client-side form validation (optional if you added it)
-
-🛠️ Technologies Used
-HTML5 – Structure of the page
-
-CSS3 – Styling and layout
-
-JavaScript – Toggle functionality and interactivity
+- Fully responsive design (desktop, tablet, and mobile)
+- Clean, maintainable code structure
+- Bootstrap-based layout for speed and flexibility
+- JavaScript for interactivity and dynamic behavior
