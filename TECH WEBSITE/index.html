@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TechPro Smartwatch Launch</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary bg-white"
+        style="margin-top: -8px"
+      >
+        <div class="container-fluid bg-white p-3 mx-3">
+          <a class="navbar-brand" href="#"><b>TECH PRO</b></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <!-- Changed me-auto to ms-auto -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pre-oreder">Pre-Order</a>
+              </li>
+            </ul>
+            <!-- <button type="button" class="btn btn-outline-secondary ms-4" data-bs-toggle="button"><i class="fa-regular fa-moon"></i></button> -->
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <div class="hero-img">
+          <img width="100%" src="Images/hero-img.jpg" alt="hero Img" />
+        </div>
+      </section>
+      <section id="features">
+        <div class="container-feature">
+          <h2 id="f-head">Features</h2>
+          <div class="feature-card">
+            <div class="container mt-5">
+              <div class="row">
+                <!-- Battery Life Card -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <i class="fas fa-battery-full fa-3x mb-3"></i>
+                      <h5 class="card-title">Battery Life</h5>
+                      <p class="card-text">
+                        Long-lasting battery for extended use.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Heart Rate Monitoring Card -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <i class="fas fa-heartbeat fa-3x mb-3"></i>
+                      <h5 class="card-title">Heart Rate Monitoring</h5>
+                      <p class="card-text">
+                        Monitor your heart rate in real-time.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- GPS Tracking Card -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <i class="fas fa-location-arrow fa-3x mb-3"></i>
+                      <h5 class="card-title">GPS Tracking</h5>
+                      <p class="card-text">
+                        Track your location with precise GPS functionality.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Waterproof Card -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <i class="fas fa-tint fa-3x mb-3"></i>
+                      <h5 class="card-title">Waterproof</h5>
+                      <p class="card-text">
+                        Fully waterproof design for any environment.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery">
+        <div style="width: 90%; margin: 0 auto">
+          <h2 id="gallery-head">Gallery</h2>
+          <div
+            id="carouselExampleCaptions"
+            class="carousel carousel-fade slide"
+            data-bs-ride="true"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active carousal">
+                <img
+                  height="450px"
+                  width="100%"
+                  src="Images/black.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  height="450px"
+                  width="100%"
+                  src="Images/white.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  height="450px"
+                  width="100%"
+                  src="Images/orange.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  height="450px"
+                  width="100%"
+                  src="Images/all colors.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="countdown">
+        <div class="container text-center my-5">
+          <h2 class="mb-4">🚀 Coming Soon 🚀</h2>
+
+          <div id="countdown">
+            <div class="timer-box">
+              <div id="days">00</div>
+              <span>Days</span>
+            </div>
+            <div class="timer-box">
+              <div id="hours">00</div>
+              <span>Hours</span>
+            </div>
+            <div class="timer-box">
+              <div id="minutes">00</div>
+              <span>Minutes</span>
+            </div>
+            <div class="timer-box">
+              <div id="seconds">00</div>
+              <span>Seconds</span>
+            </div>
+          </div>
+
+          <div id="launch-message">🎉 We Have Launched! 🎉</div>
+        </div>
+      </section>
+
+      <section id="pre-oreder">
+        <div class="pre-order">
+          <div class="container text-center">
+            <button class="btn btn-primary btn-lg" onclick="showAlert()">
+              Pre-order Now
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container d-flex justify-content-between align-items-center cont-footer">
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+        </div>
+
+        <!-- Policy Links -->
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Set launch date
+      var launchDate = new Date("June 30, 2025 00:00:00").getTime();
+
+      var timer = setInterval(function () {
+        var now = new Date().getTime();
+        var distance = launchDate - now;
+
+        // Time calculations
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display timer
+        document.getElementById("days").innerHTML =
+          days < 10 ? "0" + days : days;
+        document.getElementById("hours").innerHTML =
+          hours < 10 ? "0" + hours : hours;
+        document.getElementById("minutes").innerHTML =
+          minutes < 10 ? "0" + minutes : minutes;
+        document.getElementById("seconds").innerHTML =
+          seconds < 10 ? "0" + seconds : seconds;
+
+        // If countdown over
+        if (distance < 0) {
+          clearInterval(timer);
+          document.getElementById("countdown").style.display = "none";
+          document.getElementById("launch-message").style.display = "block";
+        }
+      }, 1000);
+
+      function showAlert() {
+        alert("Thank you for your interest!");
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+      integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

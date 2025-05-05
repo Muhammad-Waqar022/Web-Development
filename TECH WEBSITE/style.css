@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+html{
+ scroll-behavior: smooth;
+}
+body {
+  background-color: white;
+  color: #212529;
+}
+p{
+  color: #6c757d;
+}
+i{
+  color: #007bff;
+}
+i:hover{
+  color:#0056b3;
+}
+/* NAVBAR */
+.navbar {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  padding: 8px 0px 0px 0px;
+  width: 100%;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #007bff; /* or any color you want for underline */
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Hero */
+img{
+object-fit: contain;
+}
+
+/* features */
+.container-feature{
+padding: 10px;
+}
+.feature-card{
+margin-top: -40px;
+margin-bottom: 2.7rem;
+cursor: pointer;
+}
+#features{
+    background-color: white;
+}
+#f-head{
+    font-weight: 600;
+    padding:30px;
+    color: #007bff;
+}
+
+/* gallery */
+#gallery-head{
+  font-weight: 600;
+  color: #007bff;
+}
+
+/*  Carousal button */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+/* Countdown Timer Styling */
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.timer-box {
+  text-align: center;
+}
+
+.timer-box span {
+  display: block;
+  font-size: 1rem;
+  color: #555;
+}
+
+#launch-message {
+  display: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #28a745;
+  margin-top: 20px;
+  text-align: center;
+  animation: pulse 2s infinite;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* pre-order */
+
+.pre-order{
+  margin-bottom: 30px;
+}
+
+
+
+/* footer */
+.footer {
+    background-color: #212529;
+    color: white;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    height: 9rem;
+  }
+  
+  .footer a {
+    color: #ccc;
+    text-decoration: none;
+    margin-left: 15px;
+  }
+  
+  .footer a:hover {
+    color: #fff;
+  }
+  .cont-footer{
+    margin-top: 30px;
+  }
